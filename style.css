@@ -16,11 +16,12 @@ body {
 header{
     background: navy;
     color: white;
-    padding:20px,9%;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
+    padding: 35px 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
 
 /* logo */
 .nav-logo {
@@ -47,14 +48,28 @@ li a:hover{
 
 /* button */
 .btn-primary {
-  padding: 8px 14px;
+  padding: 8px 20px;
   background: black;
   color: white;
   border: none;
+  text-transform: uppercase;
   border-radius: 6px;
   cursor: pointer;
 
 }
 button:hover {
   background-color: black;
+}
+
+.btn-secondary {
+  padding: 8px 20px;
+  background: white;
+  color: black;
+  border: none;
+  text-transform: uppercase;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.btn-secondary:hover {
+  background-color: white;
 }
