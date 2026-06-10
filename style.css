@@ -322,55 +322,7 @@ nav {
   .stats-grid { grid-template-columns: 1fr; }
 }
 
-/* ===== UI KIT ===== */
-.ui-kit {
-  padding: 5rem 2rem;
-  text-align: center;
-}
 
-.ui-group {
-  margin: 1rem 0;
-}
-
-.input {
-  padding: 0.75rem 1rem;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius);
-  width: 300px;
-  max-width: 100%;
-}
-
-.alert-success {
-  background: #d1fae5;
-  color: #065f46;
-  padding: 1rem;
-  border-radius: 8px;
-  display: inline-block;
-}
-.ui-kit {
-  padding: 5rem 2rem;
-  text-align: center;
-}
-
-.ui-group {
-  margin: 1rem 0;
-}
-
-.input {
-  padding: 0.75rem 1rem;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius);
-  width: 300px;
-  max-width: 100%;
-}
-
-.alert-success {
-  background: #d1fae5;
-  color: #065f46;
-  padding: 1rem;
-  border-radius: 8px;
-  display: inline-block;
-}
 
 /* FORM FLOW*/
 .form-section {
@@ -385,15 +337,6 @@ nav {
   gap: 1rem;
 }
 
-.empty-state,
-.loading-state,
-.error-state {
-  max-width: 400px;
-  margin: 10px auto;
-  padding: 16px;
-  border-radius: 8px;
-  text-align: center;
-}
 
 
 /* ===== CTA SECTION ===== */
@@ -422,27 +365,6 @@ nav {
   justify-content: center;
   gap: 1rem;
   flex-wrap: wrap;
-}
-
-.modal {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.5);
-
-  justify-content: center;
-  align-items: center;
-}
-
-.modal.show {
-  display: flex;
-}
-
-.modal-content {
-  background: white;
-  padding: 2rem;
-  border-radius: 12px;
-  max-width: 400px;
 }
 
 /* ===== FOOTER ===== */
