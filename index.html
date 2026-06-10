@@ -1,42 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Notion — The AI workspace</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<header>
-    <div class="container">
-        <a href="#" class="nav-logo">Notion</a>
-        <nav>
-        <ul>
-            <li><a href="#Product">Product</a></li>
-            <li><a href="#AI">AI</a></li>
-            <li><a href="#solution">Solution</a></li>
-            <li><a href="#Resource">Resource</a></li>
-            <li><a href="#Developer">Developer</a></li>
-            <li><a href="#Enterprise">Enterprise</a></li>
-            <li><a href="#pricing">pricing</a></li>
-            <li><a href="#request a demo">request a demo</a></li>
-        </ul>
-            
-        </nav>
-        <div class="cta">
-        <!-- <button class="btn-primary">Get Started</button> -->
-        <a href="#" class="btn-outline">Get started</a>
-        <!-- <button class="btn-secondary">Login In</button> -->
-        <a href="#" class="btn-outline">log In</a>
-        </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav>
+    <a href="#" class="nav-logo">Notion</a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#">Product</a></li>
+      <li><a href="#">Solutions</a></li>
+      <li><a href="#">Resources</a></li>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#">AI</a></li>
+  
+      <li><a href="#">Developers</a></li>
+      <li><a href="#">Enterprise</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <a href="#" class="btn btn-ghost">Log in</a>
+      <a href="#" class="btn btn-primary">Get Notion free</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
-</header>
+  </nav>
 
-    <!--    hero section -->
-
-      <section class="hero">
+  <!-- ===== HERO ===== -->
+  <section class="hero">
     <span class="hero-badge">✨ Introducing Notion Agents</span>
     <h1>Meet the AI workspace that works for you</h1>
     <p>Build custom agents, search across all your apps, and automate busywork. The AI workspace where teams get more done, faster.</p>
@@ -46,9 +45,227 @@
     </div>
   </section>
 
+  <!-- ===== TRUSTED LOGOS ===== -->
+  <div class="trusted">
+    <p>Trusted by 98% of the Forbes Cloud 100</p>
+    <div class="logo-grid">
+      <span>OpenAI</span>
+      <span>Figma</span>
+      <span>Ramp</span>
+      <span>Vercel</span>
+      <span>Cursor</span>
+      <span>Discord</span>
+      <span>Toyota</span>
+      <span>Nvidia</span>
+    </div>
+  </div>
+
+  <!-- ===== FEATURES ===== -->
+  <section class="features">
+    <div class="features-header">
+      <h2>Bring all your work together</h2>
+      <p>One workspace for docs, projects, knowledge, and AI.</p>
+    </div>
+
+    <div class="features-grid">
+
+      <div class="feature-card">
+        <div class="feature-icon">🤖</div>
+        <h3>Custom Agents</h3>
+        <p>Build AI agents that automate repetitive work — answer questions, route tasks, send reports.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">🔍</div>
+        <h3>Enterprise Search</h3>
+        <p>One search for everything. Find answers instantly across Slack, Drive, Jira, and more.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">📝</div>
+        <h3>AI Meeting Notes</h3>
+        <p>Perfectly written meeting notes, every time. Capture decisions and action items automatically.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">📚</div>
+        <h3>Knowledge Base</h3>
+        <p>One source of truth for your entire team. Centralize everything your team needs to know.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">📄</div>
+        <h3>Docs</h3>
+        <p>Simple and powerful documents. Write, collaborate, and share — all in one place.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">✅</div>
+        <h3>Projects</h3>
+        <p>Less tracking. More progress. Manage any project with boards, timelines, and sprints.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== STATS ===== -->
+  <section class="stats">
+    <h2>Trusted by teams that ship</h2>
+    <div class="stats-grid">
+      <div class="stat-item">
+        <h3>100M+</h3>
+        <p>Users worldwide</p>
+      </div>
+      <div class="stat-item">
+        <h3>#1</h3>
+        <p>Knowledge base (G2)</p>
+      </div>
+      <div class="stat-item">
+        <h3>62%</h3>
+        <p>Of Fortune 100</p>
+      </div>
+      <div class="stat-item">
+        <h3>50%+</h3>
+        <p>Of YC companies</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="ui-kit">
+  <h2>UI Kit</h2>
+
+  <div class="ui-group">
+    <button class="btn btn-primary">Primary Button</button>
+    <button class="btn btn-outline">Secondary Button</button>
+  </div>
+
+  <div class="ui-group">
+    <input type="text" class="input" placeholder="Enter your name">
+  </div>
+
+  <div class="ui-group">
+    <div class="alert-success">
+      Success Alert
+    </div>
+  </div>
+</section>
+
+
+<!-- FORM FLOW-->
+
+<section class="form-section">
+  <h2>Contact Us</h2>
+
+  <form id="contactForm">
+
+    <label for="name">Name</label>
+    <input id="name" type="text" class="input">
+
+    <label for="email">Email</label>
+    <input id="email" type="email" class="input">
+
+    <button type="submit" class="btn btn-primary">
+      Submit
+    </button>
+
+  </form>
+
+  <p id="formMessage"></p>
+</section>
+
+<!-- STATE SECTION-->
+ <section class="states">
+  <h2>Empty State</h2>
+
+  <div class="empty-state">
+    No documents found.
+  </div>
+</section>
+
+<div class="loading-state">
+  Loading...
+</div>
+
+<div class="error-state">
+  Something went wrong. Please try again.
+</div>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta-section">
+    <h2>Start for free today</h2>
+    <p>Join millions of teams already using Notion to get more done, faster.</p>
+    <div class="cta-actions">
+      <a href="#" class="btn btn-primary btn-large">Get Notion free</a>
+      <a href="#" class="btn btn-outline btn-large">Request a demo</a>
+    </div>
+  </section>
+
+  <section class="modal-demo">
+  <button id="openModal" class="btn btn-primary">
+    Open Modal
+  </button>
+</section>
+
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <h3>Welcome</h3>
+
+    <p>This is a simple modal.</p>
+
+    <button id="closeModal" class="btn btn-primary">
+      Close
+    </button>
+  </div>
+</div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <strong>Notion</strong>
+        <p>The AI workspace where teams get more done, faster.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="#">AI Features</a></li>
+          <li><a href="#">Docs</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Calendar</a></li>
+          <li><a href="#">Pricing</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Security</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Templates</a></li>
+          <li><a href="#">Community</a></li>
+          <li><a href="#">Developers</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 Notion Labs, Inc.</span>
+      <span>Privacy · Terms · Cookies</span>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
-
-  
 </body>
 </html>
