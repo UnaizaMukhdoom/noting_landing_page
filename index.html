@@ -18,7 +18,6 @@
       <li><a href="#">Resources</a></li>
       <li><a href="#">Pricing</a></li>
       <li><a href="#">AI</a></li>
-  
       <li><a href="#">Developers</a></li>
       <li><a href="#">Enterprise</a></li>
     </ul>
@@ -46,7 +45,7 @@
   </section>
 
   <!-- ===== TRUSTED LOGOS ===== -->
-  <div class="trusted">
+  <section class="trusted">
     <p>Trusted by 98% of the Forbes Cloud 100</p>
     <div class="logo-grid">
       <span>OpenAI</span>
@@ -58,7 +57,7 @@
       <span>Toyota</span>
       <span>Nvidia</span>
     </div>
-  </div>
+  </section>
 
   <!-- ===== FEATURES ===== -->
   <section class="features">
@@ -132,9 +131,160 @@
   </section>
 
 
+ <!-- ===== FORM FLOW ===== -->
+    <section class="form-section" aria-labelledby="form-heading">
+      <div class="section-label">Get Started</div>
+      <h2 id="form-heading">Create your account</h2>
+      <p class="section-sub">Join 100M+ teams already on Notion</p>
 
+      <!-- Step Indicator -->
+      <div class="steps" aria-label="Form progress">
+        <div class="step active" aria-current="step" data-step="1">
+          <div class="step-circle">1</div>
+          <span>Your Info</span>
+        </div>
+        <div class="step-line"></div>
+        <div class="step" data-step="2">
+          <div class="step-circle">2</div>
+          <span>Choose Plan</span>
+        </div>
+        <div class="step-line"></div>
+        <div class="step" data-step="3">
+          <div class="step-circle">3</div>
+          <span>Done</span>
+        </div>
+      </div>
 
+      <form id="contactForm" class="form-card" novalidate>
 
+        <!-- Step 1 -->
+        <div class="form-step" id="step1">
+          <div class="input-wrapper">
+            <label for="fname">Full Name <span class="required" aria-hidden="true">*</span></label>
+            <input id="fname" type="text" class="input" placeholder="e.g. John Doe" autocomplete="name" required />
+            <span class="input-error-msg" id="fname-error" role="alert"></span>
+          </div>
+          <div class="input-wrapper">
+            <label for="femail">Email Address <span class="required" aria-hidden="true">*</span></label>
+            <input id="femail" type="email" class="input" placeholder="you@company.com" autocomplete="email" required />
+            <span class="input-error-msg" id="femail-error" role="alert"></span>
+          </div>
+          <button type="button" class="btn btn-primary btn-full" id="nextStep1">Continue →</button>
+        </div>
+
+        <!-- STEP 2 — Choose Plan (pricing table) -->
+      <div class="form-step hidden" id="step2">
+        <p class="form-step-title">Choose your plan</p>
+        <p class="form-step-sub">Pick the plan that fits your team. You can upgrade anytime.</p>
+ 
+        <div class="plan-table-wrap">
+          <table class="plan-table">
+            <thead>
+              <tr>
+                <th class="plan-th">What you get</th>
+                <th class="plan-th">
+                  Free
+                  <span class="plan-price-tag">$0/mo</span>
+                </th>
+                <th class="plan-th plan-th-popular">
+                  <span class="popular-badge">Most popular</span>
+                  Plus
+                  <span class="plan-price-tag">$12/mo</span>
+                </th>
+                <th class="plan-th">
+                  Business
+                  <span class="plan-price-tag">$18/mo</span>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="plan-feature">Pages</td>
+                <td class="plan-td">1,000</td>
+                <td class="plan-td plan-td-popular">Unlimited</td>
+                <td class="plan-td">Unlimited</td>
+              </tr>
+              <tr>
+                <td class="plan-feature">File uploads</td>
+                <td class="plan-td">5 MB</td>
+                <td class="plan-td plan-td-popular">Unlimited</td>
+                <td class="plan-td">Unlimited</td>
+              </tr>
+              <tr>
+                <td class="plan-feature">AI assistant</td>
+                <td class="plan-td">20 uses/mo</td>
+                <td class="plan-td plan-td-popular">✓</td>
+                <td class="plan-td">✓</td>
+              </tr>
+              <tr>
+                <td class="plan-feature">Custom agents</td>
+                <td class="plan-td muted">—</td>
+                <td class="plan-td plan-td-popular muted">—</td>
+                <td class="plan-td">✓</td>
+              </tr>
+              <tr>
+                <td class="plan-feature">Version history</td>
+                <td class="plan-td">7 days</td>
+                <td class="plan-td plan-td-popular">30 days</td>
+                <td class="plan-td">Unlimited</td>
+              </tr>
+              <tr>
+                <td class="plan-feature">Guests</td>
+                <td class="plan-td">5</td>
+                <td class="plan-td plan-td-popular">Unlimited</td>
+                <td class="plan-td">Unlimited</td>
+              </tr>
+ 
+              <!-- Select row -->
+              <tr class="plan-select-row">
+                <td class="plan-feature">Select</td>
+                <td class="plan-td">
+                  <label class="plan-radio-label">
+                    <input type="radio" name="plan" value="free" class="plan-radio" />
+                    <span class="plan-radio-btn">Choose Free</span>
+                  </label>
+                </td>
+                <td class="plan-td plan-td-popular">
+                  <label class="plan-radio-label">
+                    <input type="radio" name="plan" value="plus" class="plan-radio" checked />
+                    <span class="plan-radio-btn plan-radio-btn-popular">Choose Plus</span>
+                  </label>
+                </td>
+                <td class="plan-td">
+                  <label class="plan-radio-label">
+                    <input type="radio" name="plan" value="business" class="plan-radio" />
+                    <span class="plan-radio-btn">Choose Business</span>
+                  </label>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+ 
+        <div class="form-row">
+          <button type="button" class="btn btn-outline" id="backStep2">← Back</button>
+          <button type="submit" class="btn btn-primary" id="submitForm">Create account →</button>
+        </div>
+      </div>
+ 
+        <!-- Step 3 - Success -->
+        <div class="form-step hidden" id="step3">
+          <div class="success-screen">
+            <div class="success-icon" aria-hidden="true">🎉</div>
+
+        <!-- Alert component -->
+        <div class="alert alert-success" role="alert">
+            ✅ Account created successfully
+          </div>
+
+            <h3>You're all set!</h3>
+            <p>Welcome to Notion. Your workspace is ready.</p>
+            <a href="#" class="btn btn-primary btn-large">Open Notion →</a>
+          </div>
+        </div>
+
+      </form>
+    </section>
 
   <!-- ===== CTA ===== -->
   <section class="cta-section">
@@ -142,9 +292,41 @@
     <p>Join millions of teams already using Notion to get more done, faster.</p>
     <div class="cta-actions">
       <a href="#" class="btn btn-primary btn-large">Get Notion free</a>
-      <a href="#" class="btn btn-outline btn-large">Request a demo</a>
+     <button id="openModal" class="btn btn-outline btn-large">
+  Notify Me
+</button>
     </div>
   </section>
+
+  <div class="modal" id="demoModal">
+  <div class="modal-content">
+    
+    <button class="close-btn" id="closeModal">
+      ✕
+    </button>
+
+    <h2>Get notified about new features</h2>
+
+    <p>
+      Drop your email and we'll send you a note when Notion launches
+      something big.
+    </p>
+
+    <label for="email">Work email</label>
+
+    <input
+      type="email"
+      id="email"
+      placeholder="you@company.com"
+    />
+
+    <div class="modal-actions">
+      <button class="btn btn-outline">No thanks</button>
+      <button class="btn btn-primary">Notify me</button>
+    </div>
+
+  </div>
+</div>
 
   
 
@@ -195,6 +377,8 @@
       <span>Privacy · Terms · Cookies</span>
     </div>
   </footer>
+
+
 
   <script src="script.js"></script>
 </body>
