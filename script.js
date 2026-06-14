@@ -62,12 +62,12 @@ function goToStep(stepNumber) {
 
     // Remove old classes first
     dot.classList.remove('active', 'completed');
-    dot.removeAttribute('aria-current');
+ 
 
     // This dot is the CURRENT step
     if (dotNumber === stepNumber) {
       dot.classList.add('active');
-      dot.setAttribute('aria-current', 'step');
+   
     }
 
     // This dot is a PAST step (already done)
@@ -83,8 +83,7 @@ function goToStep(stepNumber) {
 function showError(input, errorSpan, message) {
   input.classList.add('input-error');       // red border on the input
   errorSpan.textContent = message;          // show the error text
-  input.setAttribute('aria-invalid', 'true'); // tells screen readers it's invalid
-  input.focus();                            // move cursor back to the bad field
+                  
 }
 
 
@@ -92,7 +91,7 @@ function showError(input, errorSpan, message) {
 function clearError(input, errorSpan) {
   input.classList.remove('input-error');      // remove red border
   errorSpan.textContent = '';                 // remove the error text
-  input.removeAttribute('aria-invalid');      // tell screen readers it's fixed
+
 }
 
 
@@ -136,7 +135,7 @@ backBtn.addEventListener('click', function() {
 });
 
 
-// ---- FORM SUBMIT (Step 2 → Step 3) ----
+//  FORM SUBMIT (Step 2 → Step 3) 
 form.addEventListener('submit', function(event) {
 
   // Stop the page from refreshing (default form behavior)
@@ -161,7 +160,7 @@ form.addEventListener('submit', function(event) {
 });
 
 
-// ---- LIVE VALIDATION: clear errors as user types ----
+// modal
 
 nameInput.addEventListener('input', function() {
   clearError(nameInput, nameError);
