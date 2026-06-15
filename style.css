@@ -325,7 +325,6 @@ nav {
 
 /* ===== FORM FLOW ===== */
 
-/* ===== 8. FORM FLOW ===== */
 .form-section {
    padding: 4rem 2rem;
   max-width: 560px;
@@ -391,23 +390,6 @@ nav {
   color: var(--color-muted);
   white-space: nowrap;
 }
- 
-.step.active .step-circle {
-  background: var(--color-primary);
-  border-color: var(--color-primary);
-  color: white;
-}
- 
-.step.active span {
-  color: var(--color-text);
-}
- 
-.step.completed .step-circle {
-  background: #dcfce7;
-  border-color: #86efac;
-  color: #16a34a;
-}
- 
 .step-line {
   flex: 1;
   height: 1.5px;
@@ -580,10 +562,6 @@ nav {
   margin-top: 2px;
 }
  
-.plan-th-popular .plan-price-tag {
-  color: #3b82f6;
-}
- 
 .popular-badge {
   display: block;
   background: #3b82f6;
@@ -620,19 +598,6 @@ nav {
   background: #f0f7ff;
   border-left: 2px solid #3b82f6;
   border-right: 2px solid #3b82f6;
-}
- 
-.muted {
-  color: var(--color-muted);
-}
- 
-.plan-table tbody tr:hover .plan-feature,
-.plan-table tbody tr:hover .plan-td {
-  background: var(--color-surface);
-}
- 
-.plan-table tbody tr:hover .plan-td-popular {
-  background: #e8f2ff;
 }
  
 /* Select row */
@@ -677,22 +642,6 @@ nav {
   background: var(--color-primary);
   color: white;
   border-color: var(--color-primary);
-}
- 
-.plan-radio-btn-popular {
-  background: #3b82f6;
-  color: white;
-  border-color: #3b82f6;
-}
- 
-.plan-radio-btn-popular:hover {
-  background: #2563eb;
-  border-color: #2563eb;
-}
- 
-.plan-radio:checked + .plan-radio-btn-popular {
-  background: #1d4ed8;
-  border-color: #1d4ed8;
 }
  
 @media (max-width: 480px) {
