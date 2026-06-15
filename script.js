@@ -8,28 +8,28 @@ hamburger.addEventListener('click', function() {
 
 
 // The whole <form> tag
-var form = document.getElementById('contactForm');
+const form = document.getElementById('contactForm');
 
 // The three step panels (each big section inside the form)
-var step1 = document.getElementById('step1');
-var step2 = document.getElementById('step2');
-var step3 = document.getElementById('step3');
+const step1 = document.getElementById('step1');
+const step2 = document.getElementById('step2');
+const step3 = document.getElementById('step3');
 
 // The step indicator dots at the top (Step 1, Step 2, Done)
-var stepDots = document.querySelectorAll('.step');
+const stepDots = document.querySelectorAll('.step');
 
 // The input fields
-var nameInput  = document.getElementById('fname');
-var emailInput = document.getElementById('femail');
+const nameInput  = document.getElementById('fname');
+const emailInput = document.getElementById('femail');
 
 // The error message spots under each input
-var nameError  = document.getElementById('fname-error');
-var emailError = document.getElementById('femail-error');
+const nameError  = document.getElementById('fname-error');
+const emailError = document.getElementById('femail-error');
 
 // The buttons
-var nextBtn   = document.getElementById('nextStep1');
-var backBtn   = document.getElementById('backStep2');
-var submitBtn = document.getElementById('submitForm');
+const nextBtn   = document.getElementById('nextStep1');
+const backBtn   = document.getElementById('backStep2');
+const submitBtn = document.getElementById('submitForm');
 
 function goToStep(stepNumber) {
 
@@ -44,7 +44,7 @@ function goToStep(stepNumber) {
   if (stepNumber === 3) { step3.classList.remove('hidden'); }
 
   stepDots.forEach(function(dot, index) {
-    var dotNumber = index + 1; // dots are 0-indexed, steps are 1-indexed
+    let dotNumber = index + 1; // dots are 0-indexed, steps are 1-indexed
 
     // Remove old classes first
     dot.classList.remove('active', 'completed');
@@ -84,7 +84,7 @@ function clearError(input, errorSpan) {
 // ---- BUTTON: NEXT (Step 1 → Step 2) ----
 nextBtn.addEventListener('click', function() {
 
-  var isValid = true;
+  let isValid = true;
 
  
   if (nameInput.value.trim() === '') {
